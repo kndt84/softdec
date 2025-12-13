@@ -1,0 +1,22 @@
+# MJPEG Server Configuration
+server:
+  port: 8080
+
+gstreamer:
+  bin_path: "C:\\gstreamer\\1.0\\msvc_x86_64\\bin\\gst-launch-1.0.exe"
+  debug_level: 4
+  log_file: "gst_debug.log"
+
+test_mode:
+  enabled: false
+
+# Output modes
+output:
+  mjpeg_enabled: true
+
+# Network settings
+network:
+  timeout: 2  # Reduced from 5 to 2 seconds for faster RTP detection
+  multicast_interface: "0.0.0.0"
+  auto_multicast: true
+  jitter_buffer_latency: 50  # Reduced from 200ms to 50ms for lower latency

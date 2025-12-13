@@ -1,0 +1,5 @@
+pcapfiles/
+__pycache__/
+gst_debug.log
+payload_cache.json
+*.pyc
